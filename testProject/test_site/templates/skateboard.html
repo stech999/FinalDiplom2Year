@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static humanize %}
+
+{% block title %} {{ skateboard.title }} {% endblock %}
+{% block skateboard %}
+
+<!--{{ skateboard.title }}-->
+<!--<img src="{{ skateboard.img.url }}">-->
+<!--{{ skateboard.description }}-->
+<!--{{ skateboard.formatted_price }}-->
+<!--{{ skateboard.formatted_discounted_price }}-->
+
+<div class="show">
+    <div class="show_left_box">
+        <div class="show_left_box_single_img">
+            <img src="{{ skateboard.img.url }}" alt="{{ skateboard.title }}" class="box_img">
+        </div>
+        <div class="show_desc">
+            <p class="show_desc_title">О товаре</p>
+            <p class="show_desc_info">{{ skateboard.description }}</p>
+        </div>
+        <div class="show_img_box">
+            <div class="show_img_box_pic">
+                {% if skateboard.img_lots.url %}
+                <img class="show_img box_img" src="{{ skateboard.img.url }}" alt="{{ skateboard.title }}">
+                {% else %}
+                <span style="align-content: center"><b>Картинки еще не загружены</b></span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="show_right_box" data-product-id="{{ skateboard.id }}" data-category-id="skateboard">
+        <div class="show_right_box_title">{{ skateboard.title }}</div>
+        <div class="show_right_box_price">
+            {% if skateboard.price_discount %}
+            <p class="show_right_box_old_price">
+                {{ skateboard.formatted_price }} ₽
+            </p>
+            <p class="show_right_box_price_summa summa_item">
+                <b>{{ skateboard.formatted_discounted_price }} ₽</b>
+            </p>
+            {% else %}
+            <p class="show_right_box_price_summa_noSale summa_item">
+                <b>{{ skateboard.formatted_price }} ₽</b>
+            </p>
+            {% endif %}
+        </div>
+        <div class="show_right_box_line"></div>
+        <div class="show_right_box_color">Цвет: {{ skateboard.color_id.title }}</div>
+        <div class="show_right_box_brend">Брэнд: {{ skateboard.brand_id.title }}</div>
+        <div class="show_right_box_title_size">Размер: {{ skateboard.size_id.title }}</div>
+        <div class="show_right_box_line"></div>
+        <div class="show_right_box_choisePay">
+            <div class="show_right_box_choisePay_title">
+                Варианты оплаты:
+            </div>
+            <div class="show_right_box_choisePay_box">
+                <div class="show_right_box_choisePay_box_cart">
+                    <img class="choisePay_box_cart_img" src="{% static 'img/card.svg' %}" alt="{{ skateboard.title }}">
+                </div>
+                <div class="show_right_box_choisePay_box_desc">
+                    Картой на сайте (Visa, Mastercard, МИР)<br>
+                    Со скидкой -10%
+                </div>
+            </div>
+            <div class="show_right_box_choisePay_box">
+                <div class="show_right_box_choisePay_box_cart">
+                    <img class="choisePay_box_cart_img" src="{% static 'img/paymant_cash.svg' %}"
+                         alt="{{ skateboard.title }}">
+                </div>
+                <div class="show_right_box_choisePay_box_desc">
+                    Долями: 4 платежа без комиссий и процентов
+                </div>
+            </div>
+
+        </div>
+        <button class="add-to-cart show_right_box_cart">Оформить заказ</button>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,175 @@
+/*--- header ---*/
+
+.header {
+    width: 1680px;
+    height: 205px;
+    padding-bottom: 25px;
+}
+
+.header_top_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #000000;
+    padding: 0px 160px 0px 160px;
+    color: #F2F2F2;
+}
+
+.header_top_menu_laocate {
+    display: flex;
+    gap: 35px;
+}
+
+.header_top_menu_laocate_left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.select_region {
+    background-color: #000000;
+    color: #F2F2F2;
+    border: 0px;
+    font-size: 12px;
+}
+
+.header_top_menu_laocate_right {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.phone {
+    width: 18px;
+    height: 18px;
+    fill: #BDBDBD;
+}
+
+.header_top_menu_info {
+    display: flex;
+    gap: 35px;
+}
+
+.header_top_menu_info_delivery {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header_top_menu_info_pay {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header_top_menu_info_refund {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header_top_middle {
+    display: flex;
+    padding: 0px 160px 0px 160px;
+    height: 95px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_top_middle_gender {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.header_top_middle_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_top_middle_profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header_top_middle_profile_find {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+
+.header_top_middle_profile_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_top_middle_profile_star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_top_middle_profile_trash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_top_category {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #F9F9F9;
+    gap: 25px;
+    padding: 0px 160px 0px 160px;
+}
+
+.header_top_category_sale {
+    color: red;
+}
+
+/*--- header ---*/
+.search-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: none;
+}
+
+.search-result-item {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+.findInput {
+    width: 500px;
+    font-size: 24px;
+    font-weight: 500;
+}

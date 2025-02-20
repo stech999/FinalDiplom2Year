@@ -1,0 +1,139 @@
+.show {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 160px 0 160px;
+}
+
+/* --- right --- */
+.show_left_box {
+    width: 940px;
+    height: auto;
+}
+
+.show_img_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.show_left_box_single_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show_img_box_pic {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.show_img {
+    width: 300px;
+    height: 400px;
+}
+
+.show_desc {
+    padding: 15px 0 15px 0;
+}
+
+.show_desc_title {
+    font-size: 19px;
+    font-weight: 700;
+    padding: 15px 0 15px 0;
+}
+
+
+/* --- left --- */
+.show_right_box {
+    width: 480px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.show_right_box_title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #3c4245;
+}
+
+.show_right_box_price {
+    display: flex;
+    gap: 10px;
+    color: #3c4245;
+}
+
+.show_right_box_sale {
+    width: 55px;
+    height: 25px;
+    color: white;
+    background-color: #EB5757;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show_right_box_price_summa {
+    font-size: 42px;
+    color: #EB5757;
+}
+
+.show_right_box_price_summa_noSale {
+    font-size: 42px;
+}
+
+.show_right_box_old_price {
+    display: flex;
+    text-decoration: line-through;
+    height: 42px;
+    font-size: 14px;
+    align-items: flex-end;
+}
+
+.show_right_box_line {
+    width: 100%;
+    border: 1px solid #CED4D7;
+    margin: 15px 0 15px 0;
+}
+
+.show_right_box_brend {
+    padding: 15px 0 15px 0;
+}
+
+.show_box_radio {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.show_right_box_choisePay {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.show_right_box_choisePay_box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.show_right_box_choisePay_box_cart {
+    display: flex;
+}
+
+.choisePay_box_cart_img {
+    height: 28px;
+    width: 38px;
+}
+
+.show_right_box_choisePay_box_desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+}
