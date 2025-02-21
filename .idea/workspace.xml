@@ -4,263 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Diplom_Python.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/fonts/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/044586001617695674_1317798_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/11034829-1500x1500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/11034830-1500x1500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/114100680299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/114100690299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/114100700299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/114100720299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/114100730299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/11549486-1500x1500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/11549487-1500x1500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/11549488-1500x1500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/11549489-1500x1500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/115824100299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/129642300299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/129642930299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/134433610299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/135081440299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/135081450299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/135081460299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/135081470299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/136642420299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/136709780299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/137529950299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/137529960299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/137529980299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/137529990299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/137530000299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138568810299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138568820299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138568840299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138569210299 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138569210299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138569230299 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138569230299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138569240299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138773650299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138773840299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/138773940299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/144971001733733409_1417280_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/144971001733733409_1417280_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/144971001733733409_1417280_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/144971001733733409_1417280_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/241736001681363635_1356114_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/241736001681363635_1356114_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/241736001681363635_1356114_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/241736001681363635_1356114_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/245144001733731607_1417154_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/245144001733731607_1417154_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/245144001733731607_1417154_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/245144001733731607_1417154_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/245144001733731607_1417154_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/248290001733733375_1417276_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/248290001733733375_1417276_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/248290001733733375_1417276_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/248290001733733375_1417276_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/248290001733733375_1417276_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/282816001710150987_1393612_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/282816001710150987_1393612_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/282816001710150987_1393612_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/282816001710150987_1393612_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/282816001710150987_1393612_5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/387375001722956454_1404468_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/389988001714205466_1398291_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/400411001637711707_1307977_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/53586760299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/53595030299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/53603140299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/54145350299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/54145360299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/54145370299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/553738001693230121_1382603_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/553738001693230121_1382603_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/553738001693230121_1382603_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/553738001693230121_1382603_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/553738001693230121_1382603_5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/554998001631090071-1330601_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/554998001631090071-1330601_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/554998001631090071-1330601_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/554998001631090071-1330601_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/5631.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/57995190299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/57995210299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/57995230299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/601496001646295122-1341162_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/601496001646295122-1341162_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/601496001646295122-1341162_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/61824920299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/61824930299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/61824940299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/619871001715613358_1398984_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/63031750299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/680665001733733217_1417266_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/680665001733733217_1417266_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/680665001733733217_1417266_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/680665001733733217_1417266_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/680665001733733217_1417266_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/69484230299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/69484240299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/69484250299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/69484260299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/69588500299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/71024820299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/72234170299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/72394450299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/73147580299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/73147590299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/73147600299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/73147610299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/744057001646139501_1342140_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/765 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/765.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/765.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/76662070299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/76662080299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/76716310299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/782615001690279886_1379815_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/782615001690279886_1379815_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/782615001690279886_1379815_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/782615001690279886_1379815_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/813733001719781322_1335841_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/829633001715934581_1399305_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/92104890299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/92104940299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/92104950299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/92104960299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/92104970299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/92104980299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/Ellipse_menu_groups.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/Favourites_Normal.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/Hp_front-800x800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/app_store.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/auto.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/banner1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/banner_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/banner_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/blog_img.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/cart_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/catalog_box_sort_price_line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/catalog_promo1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/catalog_promo2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/catalog_promo3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/catalog_settings_level.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/catalog_settings_level_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/catalog_settings_place_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/club_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/contacts_phone_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/find.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/footer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/footer_email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/footer_email_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/footer_line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/footer_send_.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/google_play.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image7.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/group_menu_image9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/holiday.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/human_param_number_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/image9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/info_cart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_IMG_0116.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_IMG_0117.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_WhatsApp_Image_2022-08-26_at_12.55.22.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_WhatsApp_Image_2022-08-26_at_12.57.37.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_unnamed__3_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_unnamed__7_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_Изображение_WhatsApp_2024-02-22_в_14.07.18_ae409222.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_Изображение_WhatsApp_2024-02-22_в_14.07.18_c0cb7daf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/large_Изображение_WhatsApp_2024-02-22_в_14.07.19_aa6a1d9a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/locate.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/login.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/login.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/login1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo7.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/logo_footer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/loyalty1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/loyalty2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/mail_sale_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/mastercard-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/mir-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/mir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/newItem1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/newItem2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/newItem3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/newItem4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/paginationLeft.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/paginationRight.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/pay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/paymant_cash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/play_button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/popular_item.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/popular_item2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/popular_item3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/popular_item4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/popular_item_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/popular_item_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/profile_icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/promo1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/promo2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/promo_middle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/promo_middle_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/qr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/sale_newyear.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/send_email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/settings_human_param.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/settings_human_param_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/settings_place.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/settings_title.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/trash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/twitch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/visa-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/Новый-проект-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/img/Новый-проект-49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/content.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/item.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/urls.py" afterDir="false" />
+    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="созданы карточки для товаров">
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/js/banner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/banner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/catalog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/accessorie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/clothe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/longboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/shoe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/ski.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/snowboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/sup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/surfing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skateboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +68,15 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "Z:/програмирование/Diplom_Python/testProject/test_site/static/style",
+    "last_opened_file_path": "Z:/програмирование/Diplom_Python/testProject/test_site/static/js",
     "settings.editor.selected.configurable": "proofread"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\style" />
+      <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\js" />
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\templates" />
+      <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\style" />
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static" />
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\img" />
     </key>
@@ -331,6 +102,19 @@
       <option name="presentableId" value="Default" />
       <updated>1739473149851</updated>
     </task>
+    <task id="LOCAL-00001" summary="созданы карточки для товаров">
+      <option name="closed" value="true" />
+      <created>1740080887268</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740080887268</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="созданы карточки для товаров" />
+    <option name="LAST_COMMIT_MESSAGE" value="созданы карточки для товаров" />
   </component>
 </project>

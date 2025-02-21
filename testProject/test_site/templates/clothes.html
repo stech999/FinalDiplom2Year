@@ -4,11 +4,11 @@
 {% block title %} Boardriders - сеть магазинов товаров для экстремального спорта - сноуборд и скейтборд :
 одежда, кеды и инвентарь Quiksilver, Roxy, DC, LibTech, GNU
 {% endblock %}
-{% block skateboards %}
+{% block clothes %}
 
 {% for item in items %}
 
-<a href="{% url 'skateboard' item.id %}">
+<a href="{% url 'clothe' item.id %}">
     <div class="item_box">
         <div class="item_box_img">
             {% if item.img %}

@@ -7,10 +7,12 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'style/main.css'%}">
     <link rel="stylesheet" href="{% static 'style/content.css'%}">
+    <link rel="stylesheet" href="{% static 'style/catalog.css'%}">
     <link rel="stylesheet" href="{% static 'style/header.css'%}">
     <link rel="stylesheet" href="{% static 'style/footer.css'%}">
     <link rel="stylesheet" href="{% static 'style/items.css'%}">
     <link rel="stylesheet" href="{% static 'style/item.css'%}">
+    <link rel="stylesheet" href="{% static 'style/banner.css'%}">
 </head>
 <body>
 <div class="center">
@@ -51,7 +53,7 @@
         </div>
         <div class="header_top_middle">
             <div class="header_top_middle_logo">
-                <a href=""><img src="{% static 'img/logo.svg'%}" alt=""></a>
+                <a href="/"><img src="{% static 'img/logo.svg'%}" alt=""></a>
             </div>
 
             <div class="search-container header_top_middle_profile_find">
@@ -81,22 +83,21 @@
             </div>
         </div>
         <div class="header_top_category">
-            <a href="/snowboards">Сноуборд</a>
-            <a href="/skis">Лыжи</a>
-            <a href="/skateboards">Скейтборды</a>
-            <a href="/longboards">Лонгборды</a>
-            <a href="/surfings">Серфинг</a>
-            <a href="/sups">Sup</a>
-            <a href="/clothes">Одежда</a>
-            <a href="/shoes">Обувь</a>
-            <a href="/accessories">Аксессуары</a>
-            <a href="/sellouts" class="header_top_category_sale">Распродажа</a>
+            <a href="/catalog/snowboards">Сноуборд</a>
+            <a href="/catalog/skis">Лыжи</a>
+            <a href="/catalog/skateboards/">Скейтборды</a>
+            <a href="/catalog/longboards">Лонгборды</a>
+            <a href="/catalog/surfings">Серфинг</a>
+            <a href="/catalog/sups">Sup</a>
+            <a href="/catalog/clothes">Одежда</a>
+            <a href="/catalog/shoes">Обувь</a>
+            <a href="/catalog/accessories">Аксессуары</a>
+            <!--            <a href="/catalog/sellouts" class="header_top_category_sale">Распродажа</a>-->
         </div>
     </div>
 
     {% block content %} {% endblock %}
-    {% block skateboards %} {% endblock %}
-    {% block skateboard %} {% endblock %}
+    {% block catalog %} {% endblock %}
 
     <div class="footer">
         <div class="footer_logotip">
@@ -183,5 +184,7 @@
     </div>
 
 </div>
+
+<script src="{% static 'js/banner.js' %}"></script>
 </body>
 </html>

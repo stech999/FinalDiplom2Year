@@ -5,14 +5,19 @@
 
 {% block content %}
 
-<div class="carousel-container">
+<div class="banner-carousel">
     <div class="carousel-track">
-        <div class="carousel-slide" data-index="loop-index">
-            <img src="{% static ''%}" alt="title" class="imgBanner" >
-        </div>
+        {% for banner in banners %}
+            <div class="carousel-slide">
+                <div class="carousel-title">{{ banner.title }}</div>
+                <a href="{{ banner.link }}">
+                    <img src="{{ banner.img.url }}" alt="{{ banner.title }}">
+                </a>
+            </div>
+        {% endfor %}
     </div>
-    <button class="carousel-button carousel-prev">❮</button>
-    <button class="carousel-button carousel-next">❯</button>
+    <button class="carousel-prev">&#8249;</button>
+    <button class="carousel-next">&#8250;</button>
 </div>
 <div class="content_logo_company">
     <p><img src="{% static 'img/logo1.svg'%}" alt=""></p>
