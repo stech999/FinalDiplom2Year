@@ -8,8 +8,9 @@
 
 {% for item in items %}
 
-<a href="{% url 'accessorie' item.id %}">
-    <div class="item_box">
+
+<div class="item_box">
+    <a href="{% url 'accessorie' item.id %}">
         <div class="item_box_img">
             {% if item.img %}
             <img src="{{ item.img.url }}" alt="{{ item.title }}" class="box_img">
@@ -21,26 +22,34 @@
             <div class="item_box_discount">-{{ item.price_discount }}%</div>
             {% endif %}
         </div>
+    </a>
 
-        <div class="item_box_info">
-            <div class="item_box_info_title">{{ item.title }}</div>
-            <div class="item_box_title">
-                {% if item.price_discount %}
-                <p class="item_box_info_old_price">
-                    {{ item.formatted_price }} ₽
-                </p>
-                <p class="item_box_info_price">
-                    <b>{{ item.formatted_discounted_price }} ₽</b>
-                </p>
-                {% else %}
-                <p class="item_box_info_price_noSale">
-                    <b>{{ item.formatted_price }} ₽</b>
-                </p>
-                {% endif %}
-            </div>
+    <div class="item_box_info">
+        <div class="item_box_info_title">{{ item.title }}</div>
+        <div class="item_box_title">
+            {% if item.price_discount %}
+            <p class="item_box_info_old_price">
+                {{ item.formatted_price }} ₽
+            </p>
+            <p class="item_box_info_price">
+                <b>{{ item.formatted_discounted_price }} ₽</b>
+            </p>
+            {% else %}
+            <p class="item_box_info_price_noSale">
+                <b>{{ item.formatted_price }} ₽</b>
+            </p>
+            {% endif %}
+        </div>
+
+        <div class="add_cart_item">
+            <form method="post" action="{% url 'add_to_cart' 'accessories' item.pk %}">
+                {% csrf_token %}
+                <button type="submit" class="add-to-cart show_right_box_cart">Оформить заказ</button>
+            </form>
         </div>
     </div>
-</a>
+</div>
+
 
 {% endfor %}
 

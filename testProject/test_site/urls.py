@@ -28,6 +28,9 @@ urlpatterns = [
     path('catalog/shoe/<int:pk>/', views.shoe, name='shoe'),
     path('catalog/accessories/', views.accessories, name='accessories'),
     path('catalog/accessorie/<int:pk>/', views.accessorie, name='accessorie'),
+    path('add_to_cart/<str:model_name>/<int:pk>/', views.add_to_cart, name='add_to_cart'),
+    path('cart/', views.cart_view, name='cart_view'),
+    path('remove_from_cart/<str:item_id>/', views.remove_from_cart, name='remove_from_cart'),
 ]
 
 if settings.DEBUG:
