@@ -1,0 +1,31 @@
+{% load static humanize my_filters %}
+
+<link rel="stylesheet" href="{% static 'style/login.css'%}">
+{% block login %}
+
+<div class="centerLogin">
+    <div class="loginBox">
+        <h1>Вход</h1>
+        <!--        <form method="post">-->
+        <!--            {% csrf_token %}-->
+        <!--            {{ form.as_p }}-->
+        <!--            <button type="submit">Войти</button>-->
+        <!--        </form>-->
+
+        <form method="post">
+        {% csrf_token %}
+        <div class="boxInput">
+            <label for="{{ form.username.id_for_label }}" class="boxText">Имя пользователя:</label>
+            {{ form.username|attr:"class:boxInputSize"|attr:"placeholder:Введите имя пользователя" }}
+        </div>
+        <div class="boxInput">
+            <label for="{{ form.password.id_for_label }}" class="boxText">Пароль:</label>
+            {{ form.password|attr:"class:boxInputSize"|attr:"placeholder:Введите пароль" }}
+        </div>
+        <button type="submit" class="boxBtn">Войти</button>
+    </form>
+
+    </div>
+</div>
+
+{% endblock %}

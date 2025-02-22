@@ -1,6 +1,61 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
+from .forms import RegistrationForm
+from django.contrib.auth.decorators import login_required
+from django.db.models import Q
 from .models import Skateboards, Snowboards, Skis, Longboards, Surfings, Sups, Clothes, Shoes, Accessories, Banners
 
+def search_all(request):
+    query = request.GET.get('q')
+    results = []
+
+    if query:
+        # Поиск по каждой модели
+        snowboards = Snowboards.objects.filter(Q(title__icontains=query))
+        skis = Skis.objects.filter(Q(title__icontains=query))
+        skateboards = Skateboards.objects.filter(Q(title__icontains=query))
+        longboards = Longboards.objects.filter(Q(title__icontains=query))
+        surfings = Surfings.objects.filter(Q(title__icontains=query))
+        sups = Sups.objects.filter(Q(title__icontains=query))
+        clothes = Clothes.objects.filter(Q(title__icontains=query))
+        shoes = Shoes.objects.filter(Q(title__icontains=query))
+        accessories = Accessories.objects.filter(Q(title__icontains=query))
+
+        # Добавьте результаты в общий список
+        results.extend(snowboards)
+        results.extend(skis)
+        results.extend(skateboards)
+        results.extend(longboards)
+        results.extend(surfings)
+        results.extend(sups)
+        results.extend(clothes)
+        results.extend(shoes)
+        results.extend(accessories)
+
+    results_with_classnames = []
+    for result in results:
+        results_with_classnames.append({
+            'object': result,
+            'class_name': result.__class__.__name__
+        })
+
+    result_count = len(results)  # Получаем количество результатов
+    context = {'results': results_with_classnames, 'query': query, 'result_count': result_count}
+    return render(request, 'search_results.html', context)
+
+@login_required
+def my_view(request): # используем только для сокрытия к каким то шаблонам
+    # Этот код будет выполнен только для авторизованных пользователей
+    return render(request, 'my_template.html')
+
+def register(request):
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login') # Перенаправляем на страницу входа
+    else:
+        form = RegistrationForm()
+    return render(request, 'registration/register.html', {'form': form})
 
 def content(request):
     banner = Banners.objects.all()  # Получите все баннеры

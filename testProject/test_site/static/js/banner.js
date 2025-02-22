@@ -1,14 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOM is loaded'); // Проверяем, что DOM загружен
     const carousel = document.querySelector('.banner-carousel');
-    console.log('Carousel element:', carousel); // Проверяем, найден ли элемент карусели
     const carouselTrack = carousel ? carousel.querySelector('.carousel-track') : null;
     const carouselSlides = carouselTrack ? carouselTrack.querySelectorAll('.carousel-slide') : [];
     const prevButton = carousel ? carousel.querySelector('.carousel-prev') : null;
     const nextButton = carousel ? carousel.querySelector('.carousel-next') : null;
 
     if (!carousel || !carouselTrack || !carouselSlides.length || !prevButton || !nextButton) {
-        console.error('Carousel elements not found');
         return;
     }
 

@@ -151,3 +151,6 @@ STATICFILES_DIRS = [
 ]
 MEDIA_URL = '/media/'  # URL для доступа к медиафайлам (загруженным файлам)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Каталог для хранения загруженных файлов
+
+LOGIN_REDIRECT_URL = '/'  # URL, куда перенаправлять после успешного входа
+LOGOUT_REDIRECT_URL = '/' # URL, куда перенаправлять после выхода

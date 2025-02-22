@@ -2,9 +2,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
 from . import views
+from django.contrib.auth import views as auth_views  # Импортируем встроенные представления
 
 urlpatterns = [
     path('', views.content, name='content'),
+    path('search.css/', views.search_all, name='search_all'),
+    path('login/', auth_views.LoginView.as_view(), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('register/', views.register, name='register'),
     path('catalog/snowboards/', views.snowboards, name='snowboards'),
     path('catalog/snowboard/<int:pk>/', views.snowboard, name='snowboard'),
     path('catalog/skis/', views.skis, name='skis'),

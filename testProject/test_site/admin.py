@@ -2,7 +2,6 @@ from django.contrib import admin
 from .models import Color, Size, Brand, Skateboards, Snowboards, Skis, Longboards, Surfings, Sups, Clothes, Shoes, \
     Accessories, Banners
 
-
 # Register your models here.
 
 @admin.register(Color)
