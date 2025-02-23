@@ -4,23 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="сделан поиск">
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" afterDir="false" />
+    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="добавлена корзина">
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/js/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/cart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/accessorie.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/accessorie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/clothe.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/clothe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/longboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/longboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/shoe.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/shoe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skateboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/ski.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/ski.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/snowboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/snowboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/sup.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/sup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/surfing.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/surfing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testProject/test_site/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +60,14 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "Z:/програмирование/Diplom_Python/testProject/test_site/static/style",
+    "last_opened_file_path": "Z:/програмирование/Diplom_Python/testProject/test_site/static/js",
     "settings.editor.selected.configurable": "proofread"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\style" />
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\js" />
+      <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\style" />
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\templates" />
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static" />
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\img" />
@@ -133,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740243424799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="добавлена корзина">
+      <option name="closed" value="true" />
+      <created>1740254214668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740254214669</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +150,7 @@
     <MESSAGE value="созданы все категории" />
     <MESSAGE value="поправлены карточка товара на отступы" />
     <MESSAGE value="сделан поиск" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделан поиск" />
+    <MESSAGE value="добавлена корзина" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлена корзина" />
   </component>
 </project>
