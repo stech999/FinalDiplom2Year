@@ -1,0 +1,334 @@
+{% extends "base.html" %}
+{% load static humanize %}
+{% block title %} Boardriders - сеть магазинов товаров для экстремального спорта - сноуборд и скейтборд :
+одежда, кеды и инвентарь Quiksilver, Roxy, DC, LibTech {% endblock %}
+
+{% block content %}
+
+<div class="banner-carousel">
+    <div class="carousel-track">
+        {% for banner in banners %}
+            <div class="carousel-slide">
+                <div class="carousel-title">{{ banner.title }}</div>
+                <a href="{{ banner.link }}">
+                    <img src="{{ banner.img.url }}" alt="{{ banner.title }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <button class="carousel-prev">&#8249;</button>
+    <button class="carousel-next">&#8250;</button>
+</div>
+<div class="content_logo_company">
+    <p><img src="{% static 'img/logo1.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo2.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo3.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo4.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo5.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo6.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo7.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo8.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo9.svg'%}" alt=""></p>
+    <p><img src="{% static 'img/logo10.svg'%}" alt=""></p>
+</div>
+<div class="content_promo">
+    <div class="content_promo_left">
+        <div class="content_promo_img">
+            <img src="{% static 'img/promo1.svg'%}" alt="">
+        </div>
+        <div class="content_promo_text">
+            НАЗВАНИЕ АКЦИИ №1
+        </div>
+    </div>
+    <div class="content_promo_right">
+        <div class="content_promo_right">
+            <div class="content_promo_img">
+                <img src="{% static 'img/promo2.svg'%}" alt="">
+            </div>
+            <div class="content_promo_text">
+                НАЗВАНИЕ АКЦИИ №2
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_new_products">
+    <p>Новинки</p>
+</div>
+<div class="content_new_items_carousel">
+    <div class="content_new_products_carousel">
+        <div class="content_new_products_carousel_img">
+            <img src="{% static 'img/newItem1.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_fav">
+            <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_block_descrp">
+            <div class="content_new_products_carousel_title">
+                LIB TECH
+            </div>
+            <div class="content_new_products_carousel_descrip">
+                Мужской Сноуборд
+            </div>
+            <div class="content_new_products_carousel_price">
+                34392 ₽
+            </div>
+        </div>
+    </div>
+    <div class="content_new_products_carousel">
+        <div class="content_new_products_carousel_img">
+            <img src="{% static 'img/newItem2.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_fav">
+            <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_block_descrp">
+            <div class="content_new_products_carousel_title">
+                LIB TECH
+            </div>
+            <div class="content_new_products_carousel_descrip">
+                Мужской Сноуборд
+            </div>
+            <div class="content_new_products_carousel_price">
+                34392 ₽
+            </div>
+        </div>
+    </div>
+    <div class="content_new_products_carousel">
+        <div class="content_new_products_carousel_img">
+            <img src="{% static 'img/newItem3.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_fav">
+            <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_block_descrp">
+            <div class="content_new_products_carousel_title">
+                LIB TECH
+            </div>
+            <div class="content_new_products_carousel_descrip">
+                Мужской Сноуборд
+            </div>
+            <div class="content_new_products_carousel_price">
+                34392 ₽
+            </div>
+        </div>
+    </div>
+    <div class="content_new_products_carousel">
+        <div class="content_new_products_carousel_img">
+            <img src="{% static 'img/newItem4.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_fav">
+            <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+        </div>
+        <div class="content_new_products_carousel_block_descrp">
+            <div class="content_new_products_carousel_title">
+                LIB TECH
+            </div>
+            <div class="content_new_products_carousel_descrip">
+                Мужской Сноуборд
+            </div>
+            <div class="content_new_products_carousel_price">
+                34392 ₽
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_more_items">
+    <a href="/catalog/snowboards">
+        <button class="content_more_items_button">
+            Показать больше
+        </button>
+    </a>
+</div>
+<div class="content_middle_promo">
+    <div class="content_middle_promo_img">
+        <img src="{% static 'img/promo_middle.svg'%}" alt="">
+    </div>
+    <div class="content_middle_promo_logo">
+        <img src="{% static 'img/promo_middle_logo.svg'%}" alt="">
+    </div>
+    <div class="content_middle_promo_title">
+        Название Акции
+    </div>
+    <div class="content_middle_promo_descr">
+        Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах
+        первого
+        имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою
+        противоположность как раз этому.
+    </div>
+</div>
+<div class="content_popular_collection">
+    <div class="content_popular_collection_title">
+        DC Shoes популярное в коллекции
+    </div>
+    <div class="content_popular_collection_items">
+        <div class="content_popular_collection_items_carousel">
+            <div class="content_popular_collection_items_img">
+                <img src="{% static 'img/popular_item.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_sticker_sale">
+                -50%
+            </div>
+            <div class="content_popular_collection_items_fav">
+                <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_block_descrp">
+                <div class="content_new_products_carousel_title">
+                    LIB TECH
+                </div>
+                <div class="content_new_products_carousel_descrip">
+                    Мужской Сноуборд
+                </div>
+                <div class="content_popular_collection_items_price">
+                    <p class="content_new_products_carousel_old_price">34392 ₽</p>
+                    <p class="content_new_products_carousel_new_price">17392 ₽</p>
+                </div>
+            </div>
+        </div>
+        <div class="content_popular_collection_items_carousel">
+            <div class="content_popular_collection_items_img">
+                <img src="{% static 'img/popular_item2.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_sticker_sale">
+                -50%
+            </div>
+            <div class="content_popular_collection_items_fav">
+                <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_block_descrp">
+                <div class="content_new_products_carousel_title">
+                    LIB TECH
+                </div>
+                <div class="content_new_products_carousel_descrip">
+                    Мужской Сноуборд
+                </div>
+                <div class="content_popular_collection_items_price">
+                    <p class="content_new_products_carousel_old_price">34392 ₽</p>
+                    <p class="content_new_products_carousel_new_price">17392 ₽</p>
+                </div>
+            </div>
+        </div>
+        <div class="content_new_products_carousel">
+            <div class="content_new_products_carousel_img">
+                <img src="{% static 'img/popular_item3.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_fav">
+                <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_block_descrp">
+                <div class="content_new_products_carousel_title">
+                    LIB TECH
+                </div>
+                <div class="content_new_products_carousel_descrip">
+                    Мужской Сноуборд
+                </div>
+                <div class="content_new_products_carousel_price">
+                    34392 ₽
+                </div>
+            </div>
+        </div>
+        <div class="content_new_products_carousel">
+            <div class="content_new_products_carousel_img">
+                <img src="{% static 'img/popular_item4.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_fav">
+                <img src="{% static 'img/Favourites_Normal.svg'%}" alt="">
+            </div>
+            <div class="content_new_products_carousel_block_descrp">
+                <div class="content_new_products_carousel_title">
+                    LIB TECH
+                </div>
+                <div class="content_new_products_carousel_descrip">
+                    Мужской Сноуборд
+                </div>
+                <div class="content_new_products_carousel_price">
+                    34392 ₽
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content_popular_collection_items_arrow_right">
+        <img src="{% static 'img/popular_item_right.svg'%}" alt="">
+    </div>
+    <div class="content_popular_collection_items_arrow_left">
+        <img src="{% static 'img/popular_item_left.svg'%}" alt="">
+    </div>
+</div>
+<div class="content_more_items">
+    <button class="content_more_items_button">Показать больше</button>
+</div>
+<div class="content_blogs">
+    <div class="content_blogs_img">
+        <img src="{% static 'img/blog_img.svg'%}" alt="">
+    </div>
+    <div class="content_blogs_img_button">
+        <img src="{% static 'img/play_button.svg'%}" alt="">
+
+    </div>
+    <div class="content_blogs_info">
+        <div class="content_blogs_info_link">
+            <p class="content_blogs_info_link_text_left">Блоги</p>
+            <p class="content_blogs_info_link_text_right">Все блоги</p>
+        </div>
+        <div class="content_blogs_info_title">
+            Очень преочень длинное название блога
+        </div>
+        <div class="content_blogs_info_descr">
+            Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах
+            первого
+            имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою
+            противоположность как раз этому.
+        </div>
+        <div class="content_blogs_info_descr">
+            Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах
+            первого
+            имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою
+            противоположность как раз этому...
+        </div>
+        <div class="content_blogs_info_cont">
+            Читать продолжение
+        </div>
+
+    </div>
+</div>
+<div class="content_loyalty_program">
+    <div class="content_loyalty_program_block1">
+        <div class="content_loyalty_program_block1_img">
+            <img src="{% static 'img/club_logo.svg'%}" alt="">
+        </div>
+        <div class="content_loyalty_program_block1_title">
+            Программа лояльности
+        </div>
+        <div class="content_loyalty_program_block1_descr">
+            Зарабатывайте баллы и получайте преимущества
+        </div>
+        <div class="content_loyalty_program_block1_join_club">
+            Вступить в клуб
+        </div>
+    </div>
+    <div class="content_loyalty_program_block2">
+        <div class="content_loyalty_program_block2_img">
+            <img src="{% static 'img/mail_sale_logo.svg'%}" alt="">
+        </div>
+        <div class="content_loyalty_program_block2_title">
+            Скидка -10%
+        </div>
+        <div class="content_loyalty_program_block2_descr">
+            За подписку на наши новости
+        </div>
+        <div class="content_loyalty_program_block2_subscr">
+
+            <input type="text" placeholder="за подписку -10%" class="block2_subscr_place">
+            <button type="submit" class="block2_subscr_btn"><img src="{% static 'img/send_email.svg'%}"
+                                                                 alt=""></button>
+
+            <div class="content_loyalty_program_block2_subscr_email">
+                <img src="{% static 'img/email.svg'%}" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

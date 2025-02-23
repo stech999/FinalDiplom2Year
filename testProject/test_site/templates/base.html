@@ -1,0 +1,202 @@
+{% load static humanize %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style/main.css'%}">
+    <link rel="stylesheet" href="{% static 'style/content.css'%}">
+    <link rel="stylesheet" href="{% static 'style/catalog.css'%}">
+    <link rel="stylesheet" href="{% static 'style/header.css'%}">
+    <link rel="stylesheet" href="{% static 'style/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'style/items.css'%}">
+    <link rel="stylesheet" href="{% static 'style/item.css'%}">
+    <link rel="stylesheet" href="{% static 'style/banner.css'%}">
+    <link rel="stylesheet" href="{% static 'style/logout.css'%}">
+    <link rel="stylesheet" href="{% static 'style/cart.css'%}">
+</head>
+<body>
+<div class="center">
+    <div class="header">
+        <div class="header_top_menu">
+            <div class="header_top_menu_laocate">
+                <div class="header_top_menu_laocate_left">
+                    <p><img src="{% static 'img/locate.svg'%}" alt=""></p>
+                    <p>Ваш регион доставки:</p>
+                    <select name="" id="" class="select_region">
+                        <option value="apple">Москва</option>
+                        <option value="banana">Санкт-Петербург</option>
+                        <option value="orange">Екатеринбург</option>
+                        <option value="grape">Казань</option>
+                    </select>
+                </div>
+                <div class="header_top_menu_laocate_right">
+                    <p>Магазины</p>
+                    <p>Помощь</p>
+                    <p>Блоги</p>
+                </div>
+            </div>
+            <div class="header_top_menu_info">
+                <div class="header_top_menu_info_delivery">
+                    <p><img src="{% static 'img/auto.svg'%}" alt=""></p>
+                    <p>Бесплатная доставка *</p>
+                </div>
+                <div class="header_top_menu_info_pay">
+                    <p><img src="{% static 'img/pay.svg'%}" alt=""></p>
+                    <p>Оплата при получении</p>
+                </div>
+                <div class="header_top_menu_info_refund">
+                    <p><img src="{% static 'img/phone.svg'%}" alt="" class="phone"></p>
+                    <p>8 (800) 000 00 00</p>
+                </div>
+            </div>
+        </div>
+        <div class="header_top_middle">
+            <div class="header_top_middle_logo">
+                <a href="/"><img src="{% static 'img/logo.svg'%}" alt=""></a>
+            </div>
+
+            <div class="header_top_middle_profile_find">
+                <p><img src="{% static 'img/find.svg'%}" alt=""></p>
+                <form method="get" action="{% url 'search_all' %}" class="find_box">
+                    <input type="text" name="q" placeholder="Поиск товаров..." class="findInput">
+                    <button type="submit" class="search_btn">Найти</button>
+                </form>
+            </div>
+
+            <div class="header_top_middle_profile">
+                <div class="header_top_middle_profile_login">
+                    <p><img src="{% static 'img/login.svg'%}" alt=""></p>
+                    {% if user.is_authenticated %}
+                    <a href="/admin/" target='blank'>Привет, {{ user.username }}!</a>
+                    <form method="post" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="logoutBtn">Выйти</button>
+                    </form>
+                    {% else %}
+                    <div class="header_top_middle_profile_login">
+                        <a href="{% url 'login' %}">Войти</a>
+                        <a href="{% url 'register' %}" target="blank">РЕГИСТРАЦИЯ</a>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="header_top_middle_profile_trash">
+                    <a href="cart" class="header_top_middle_profile_trash">
+                        <p><img src="{% static 'img/trash.svg'%}" alt=""></p>
+                        <p>КОРЗИНА</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="header_top_category">
+            <a href="/catalog/snowboards">Сноуборд</a>
+            <a href="/catalog/skis">Лыжи</a>
+            <a href="/catalog/skateboards/">Скейтборды</a>
+            <a href="/catalog/longboards">Лонгборды</a>
+            <a href="/catalog/surfings">Серфинг</a>
+            <a href="/catalog/sups">Sup</a>
+            <a href="/catalog/clothes">Одежда</a>
+            <a href="/catalog/shoes">Обувь</a>
+            <a href="/catalog/accessories">Аксессуары</a>
+        </div>
+    </div>
+
+    {% block search_result %} {% endblock %}
+    {% block content %} {% endblock %}
+    {% block catalog %} {% endblock %}
+    {% block login %} {% endblock %}
+    {% block logout %} {% endblock %}
+    {% block register %} {% endblock %}
+    {% block cart %} {% endblock %}
+
+    <div class="footer">
+        <div class="footer_logotip">
+            <div class="footer_logo">
+                <img src="{% static 'img/logo_footer.svg'%}" alt="">
+                BOARDRIDERS
+            </div>
+            <div class="footer_logotip_subscr">
+
+                <input type="text" placeholder="Подпишись на рассылку и получи -10% скидку"
+                       class="footer_subscr_text">
+                <button type="submit" class="footer_logotip_subscr_btn">
+                    <img src="{% static 'img/footer_send_.svg'%}" alt="">
+                </button>
+
+                <div class="footer_logotip_subscr_email">
+                    <img src="{% static 'img/footer_email.svg'%}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer_line"></div>
+        <div class="footer_info">
+            <div class="footer_info_app">
+                <div class="footer_info_app_title">
+                    <div class="footer_info_app_title_box1">Доступ к ранним релизам в приложении</div>
+                    <div class="footer_info_app_title_box2"><img src="{% static 'img/app_store.svg'%}" alt="">
+                    </div>
+                    <div class="footer_info_app_title_box3"><img src="{% static 'img/google_play.svg'%}"
+                                                                 alt=""></div>
+                    <div class="footer_info_app_title_box4"><img src="{% static 'img/qr.svg'%}" alt=""></div>
+                </div>
+            </div>
+            <div class="footer_info_contacts">
+                <div class="footer_contacts">
+                    <div class="footer_contacts_box1">Контакты</div>
+                    <div class="footer_contacts_box2"><img src="{% static 'img/contacts_phone_icon.svg'%}"
+                                                           alt=""></div>
+                    <div class="footer_contacts_box3">8 (800) 000-00-00</div>
+                    <div class="footer_contacts_box4">Бесплатная горячая линия Ежедневно с 9 до 21</div>
+                    <div class="footer_contacts_box5"><img src="{% static 'img/footer_email_icon.svg'%}"
+                                                           alt=""></div>
+                    <div class="footer_contacts_box6">Контактный Email</div>
+                    <div class="footer_contacts_box7">info@site.ru</div>
+                </div>
+            </div>
+            <div class="footer_info_help">
+                <div class="footer_info_help_title">Помощь</div>
+                <div class="footer_info_help_box">Доставка</div>
+                <div class="footer_info_help_box">Оплата</div>
+                <div class="footer_info_help_box">Возврат</div>
+                <div class="footer_info_help_box">Отзывы (2290)</div>
+                <div class="footer_info_help_box">Акции и скидки</div>
+            </div>
+            <div class="footer_info_company">
+                <div class="footer_info_company_title">Компания</div>
+                <div class="footer_info_company_box">Контакты</div>
+                <div class="footer_info_company_box">О boardriders</div>
+                <div class="footer_info_company_box">Вакансии</div>
+                <div class="footer_info_company_box">Публичная оферта</div>
+            </div>
+            <div class="footer_info_other">
+                <div class="footer_info_other_title">Boardriders Inc.</div>
+                <div class="footer_info_other_box">Франчайзинг</div>
+                <div class="footer_info_other_box">Quiksilver</div>
+                <div class="footer_info_other_box">Roxy</div>
+                <div class="footer_info_other_box">DC Shoes</div>
+                <div class="footer_info_other_box">Boardriders Club</div>
+            </div>
+        </div>
+        <div class="footer_line"></div>
+        <div class="footer_social">
+            <div class="footer_social_media">
+                <img src="{% static 'img/twitter.svg'%}" alt="">
+                <img src="{% static 'img/facebook.svg'%}" alt="">
+                <img src="{% static 'img/twitch.svg'%}" alt="">
+                <img src="{% static 'img/youtube.svg'%}" alt="">
+                <img src="{% static 'img/instagram.svg'%}" alt="">
+            </div>
+            <div class="footer_social_copy">
+                <p>&copy; 2025 sait.ru. Все права защищены</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/banner.js' %}"></script>
+<script src="{% static 'js/order.js' %}"></script>
+</body>
+</html>

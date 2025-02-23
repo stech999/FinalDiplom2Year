@@ -1,0 +1,52 @@
+.banner-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 1360px; /* Задайте нужную ширину */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease; /* Анимация */
+}
+
+.carousel-title{
+    top: 40%;
+    left: 150px;
+    position: absolute;
+    font-size: 45px;
+    font-weight: 500;
+    width: 300px;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Каждый слайд занимает 100% ширины контейнера */
+    width: 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block; /* Убирает лишний отступ под изображением */
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Отображаем кнопки поверх слайдов */
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}

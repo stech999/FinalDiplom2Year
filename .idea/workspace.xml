@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="добавлена корзина">
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/js/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/test_site/static/style/cart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +35,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "Z:/програмирование/Diplom_Python/testProject/test_site/static/js",
-    "settings.editor.selected.configurable": "proofread"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;Z:/програмирование/Diplom_Python/testProject/test_site/static/js&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="Z:\програмирование\Diplom_Python\testProject\test_site\static\js" />
