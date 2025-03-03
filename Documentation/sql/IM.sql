@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3307
--- Время создания: Фев 23 2025 г., 18:05
+-- Время создания: Мар 03 2025 г., 22:12
 -- Версия сервера: 8.0.30
 -- Версия PHP: 8.1.9
 
@@ -193,7 +193,9 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$870000$SuUJEtr37K4enx2DhK3UE7$Fm/dUWsEgSTxARw2dRJED2owCYtIf3k5uEbMu4ulXnQ=', '2025-02-23 13:46:25.649484', 1, 'admin', '', '', 'admin@mail.com', 1, 1, '2025-02-20 15:43:26.281399');
+(1, 'pbkdf2_sha256$870000$SuUJEtr37K4enx2DhK3UE7$Fm/dUWsEgSTxARw2dRJED2owCYtIf3k5uEbMu4ulXnQ=', '2025-03-03 14:14:09.540614', 1, 'admin', '', '', 'admin@mail.com', 1, 1, '2025-02-20 15:43:26.281399'),
+(2, 'pbkdf2_sha256$870000$6GEDjXGFW1CDk6fPTsHdqI$ANeP9ggEaQWTH6m6hybqzGPDYWsngEGFNVKHcYCZmZA=', '2025-02-23 15:49:31.084518', 0, 'manager', '', '', '', 1, 1, '2025-02-23 15:38:16.000000'),
+(3, 'pbkdf2_sha256$870000$xFhpvm7sz5ovJYzBhyfOhD$3maLl83z/c8XrKXgf7ROffKjo2dH9nRLf7DtY96rjKY=', '2025-02-23 15:56:42.113618', 0, 'Category_manager', '', '', '', 1, 1, '2025-02-23 15:53:28.000000');
 
 -- --------------------------------------------------------
 
@@ -218,6 +220,40 @@ CREATE TABLE `auth_user_user_permissions` (
   `user_id` int NOT NULL,
   `permission_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп данных таблицы `auth_user_user_permissions`
+--
+
+INSERT INTO `auth_user_user_permissions` (`id`, `user_id`, `permission_id`) VALUES
+(13, 2, 17),
+(14, 2, 18),
+(15, 2, 19),
+(16, 2, 20),
+(6, 2, 61),
+(7, 2, 62),
+(8, 2, 63),
+(1, 2, 64),
+(2, 2, 69),
+(3, 2, 70),
+(4, 2, 71),
+(5, 2, 72),
+(38, 3, 17),
+(39, 3, 18),
+(40, 3, 19),
+(41, 3, 20),
+(42, 3, 25),
+(43, 3, 26),
+(44, 3, 27),
+(45, 3, 28),
+(46, 3, 29),
+(47, 3, 30),
+(48, 3, 31),
+(33, 3, 32),
+(34, 3, 33),
+(35, 3, 34),
+(36, 3, 35),
+(37, 3, 36);
 
 -- --------------------------------------------------------
 
@@ -259,16 +295,27 @@ CREATE TABLE `Brand` (
 INSERT INTO `Brand` (`id`, `title`) VALUES
 (13, 'Champion'),
 (12, 'Columbia'),
+(18, 'Cordillero'),
+(28, 'Demix'),
+(20, 'Easy Rider'),
+(24, 'Element'),
 (5, 'Fischer'),
 (11, 'Gladiator'),
+(26, 'GQ Board'),
 (8, 'Head'),
 (9, 'Jimmy Lewis'),
 (17, 'Kappa'),
+(22, 'Madshus'),
 (16, 'Maison David'),
 (14, 'New Balance'),
+(21, 'Nordway'),
+(27, 'PUMA'),
 (15, 'Raindrops'),
+(23, 'Rossignol'),
+(25, 'Street Surfing'),
 (2, 'Termit'),
-(10, 'WSGS');
+(10, 'WSGS'),
+(19, 'YES');
 
 -- --------------------------------------------------------
 
@@ -295,7 +342,8 @@ CREATE TABLE `Clothes` (
 
 INSERT INTO `Clothes` (`id`, `title`, `description`, `img`, `img_lots`, `price_discount`, `price`, `brand_id_id`, `color_id_id`, `size_id_id`) VALUES
 (1, 'Трусы женские Columbia Lace cotton strech hipster, 2 штуки', 'Женские трусы Columbia.', 'clothes/104692950299.jpg', 'clothes/104692970299.jpg', NULL, '1299', 12, 1, 2),
-(2, 'Трусы женские Columbia Cotton Stretch with Elastic, 2 штуки', 'Женские трусы бикини Columbia. Модель выполнена из хлопка с добавлением эластана.', 'clothes/104692780299.jpg', 'clothes/104692830299.jpg', NULL, '1599', 12, 1, 1);
+(2, 'Трусы женские Columbia Cotton Stretch with Elastic, 2 штуки', 'Женские трусы бикини Columbia. Модель выполнена из хлопка с добавлением эластана.', 'clothes/104692780299.jpg', 'clothes/104692830299.jpg', NULL, '1599', 12, 1, 1),
+(3, 'Легкая куртка женская Cordillero', 'Со стильной и комфортной ветровкой Cordillero даже самая плохая погода — не помеха для путешествия.', 'clothes/145983090299.jpg', 'clothes/145437150299.jpg', NULL, '7499', 18, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -426,7 +474,43 @@ INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`,
 (83, '2025-02-23 14:34:39.219532', '4', 'Athlex', 3, '', 7, 1),
 (84, '2025-02-23 14:35:14.467436', '6', 'Bonus', 3, '', 7, 1),
 (85, '2025-02-23 14:35:46.952724', '1', 'Element', 3, '', 7, 1),
-(86, '2025-02-23 14:36:49.579147', '3', 'Анорак', 3, '', 7, 1);
+(86, '2025-02-23 14:36:49.579147', '3', 'Анорак', 3, '', 7, 1),
+(87, '2025-02-23 15:38:17.061648', '2', 'manager', 1, '[{\"added\": {}}]', 4, 1),
+(88, '2025-02-23 15:39:35.958513', '2', 'manager', 2, '[{\"changed\": {\"fields\": [\"User permissions\"]}}]', 4, 1),
+(89, '2025-02-23 15:43:34.998737', '2', 'manager', 2, '[{\"changed\": {\"fields\": [\"User permissions\"]}}]', 4, 1),
+(90, '2025-02-23 15:45:12.267097', '2', 'manager', 2, '[{\"changed\": {\"fields\": [\"User permissions\"]}}]', 4, 1),
+(91, '2025-02-23 15:45:40.993734', '2', 'manager', 2, '[{\"changed\": {\"fields\": [\"User permissions\"]}}]', 4, 1),
+(92, '2025-02-23 15:46:11.419265', '2', 'manager', 2, '[{\"changed\": {\"fields\": [\"User permissions\"]}}]', 4, 1),
+(93, '2025-02-23 15:46:36.760137', '2', 'manager', 2, '[{\"changed\": {\"fields\": [\"Staff status\"]}}]', 4, 1),
+(94, '2025-02-23 15:47:40.133374', '2', 'manager', 2, '[{\"changed\": {\"fields\": [\"User permissions\"]}}]', 4, 1),
+(95, '2025-02-23 15:49:23.117450', '18', 'Cordillero', 1, '[{\"added\": {}}]', 7, 1),
+(96, '2025-02-23 15:51:01.877484', '3', 'Легкая куртка женская Cordillero', 1, '[{\"added\": {}}]', 16, 2),
+(97, '2025-02-23 15:53:29.704600', '3', 'manager2', 1, '[{\"added\": {}}]', 4, 1),
+(98, '2025-02-23 15:55:07.080728', '3', 'Category_manager', 2, '[{\"changed\": {\"fields\": [\"Username\", \"Staff status\", \"User permissions\"]}}]', 4, 1),
+(99, '2025-03-03 14:14:20.200572', '19', 'YES', 1, '[{\"added\": {}}]', 7, 1),
+(100, '2025-03-03 14:15:43.859871', '3', 'Сноуборд YES. Basic', 1, '[{\"added\": {}}]', 11, 1),
+(101, '2025-03-03 14:17:32.820641', '20', 'Easy Rider', 1, '[{\"added\": {}}]', 7, 1),
+(102, '2025-03-03 17:28:30.744023', '4', 'Сноуборд EASYRIDER AURORA LAB', 1, '[{\"added\": {}}]', 11, 1),
+(103, '2025-03-03 18:19:58.748138', '21', 'Nordway', 1, '[{\"added\": {}}]', 7, 1),
+(104, '2025-03-03 18:21:07.853539', '3', 'Беговые лыжи Nordway Classic + крепления NNN', 1, '[{\"added\": {}}]', 12, 1),
+(105, '2025-03-03 18:21:19.965242', '3', 'Беговые лыжи Nordway Classic + крепления NNN', 2, '[{\"changed\": {\"fields\": [\"\\u0426\\u0432\\u0435\\u0442\\u0430\"]}}]', 12, 1),
+(106, '2025-03-03 18:23:09.568919', '4', 'Комплект лыжный детский Nordway Bliss NNN', 1, '[{\"added\": {}}]', 12, 1),
+(107, '2025-03-03 18:23:31.301895', '4', 'Комплект лыжный детский Nordway Bliss NNN', 2, '[{\"changed\": {\"fields\": [\"\\u0426\\u0432\\u0435\\u0442\\u0430\"]}}]', 12, 1),
+(108, '2025-03-03 18:24:25.743656', '22', 'Madshus', 1, '[{\"added\": {}}]', 7, 1),
+(109, '2025-03-03 18:25:41.614276', '5', 'Беговые лыжи Madshus Nordseter Carbon Skate + крепления NNN', 1, '[{\"added\": {}}]', 12, 1),
+(110, '2025-03-03 18:27:07.922279', '23', 'Rossignol', 1, '[{\"added\": {}}]', 7, 1),
+(111, '2025-03-03 18:28:12.608615', '6', 'Беговые лыжи Rossignol Evo XT 55 Positrack', 1, '[{\"added\": {}}]', 12, 1),
+(112, '2025-03-03 18:38:39.393769', '24', 'Element', 1, '[{\"added\": {}}]', 7, 1),
+(113, '2025-03-03 18:40:06.395099', '5', 'Скейтборд Element Escape From 7.75\"', 1, '[{\"added\": {}}]', 10, 1),
+(114, '2025-03-03 18:41:12.740826', '25', 'Street Surfing', 1, '[{\"added\": {}}]', 7, 1),
+(115, '2025-03-03 18:42:07.546337', '3', 'Лонгборд Street Surfing Curve Freeride Drop Through Holy Cube 39\"', 1, '[{\"added\": {}}]', 13, 1),
+(116, '2025-03-03 18:44:17.191591', '4', 'SUP Easy Rider Safari 11\'', 1, '[{\"added\": {}}]', 15, 1),
+(117, '2025-03-03 18:44:51.898362', '26', 'GQ Board', 1, '[{\"added\": {}}]', 7, 1),
+(118, '2025-03-03 18:45:45.314210', '5', 'SUP Board надувной GQ 335 Ninja', 1, '[{\"added\": {}}]', 15, 1),
+(119, '2025-03-03 18:46:58.853404', '27', 'PUMA', 1, '[{\"added\": {}}]', 7, 1),
+(120, '2025-03-03 18:48:01.666430', '3', 'Кроссовки женские PUMA St Runner V3 L', 1, '[{\"added\": {}}]', 17, 1),
+(121, '2025-03-03 18:48:36.289504', '28', 'Demix', 1, '[{\"added\": {}}]', 7, 1),
+(122, '2025-03-03 18:49:24.766157', '4', 'Кроссовки женские Demix Serena 4', 1, '[{\"added\": {}}]', 17, 1);
 
 -- --------------------------------------------------------
 
@@ -536,7 +620,8 @@ CREATE TABLE `django_session` (
 --
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
-('av0hfes80w4xehvhlytgl7yotnjop2po', '.eJxVjr1uwyAUhV8lYo6siwGHeOzSqVOGLpUQP5fYaYJbY4Yq8rsXiCuly8flnsM53InSaRlUijir0ZGeULJ_3hltPzEUwV10OE-NncIyj6YplmZTY_M2Oby-bN5_AYOOQ37Nuw59i5x1kqMQnaWCOYSD53C0zlvmGXghAaRF6SmVyCztWgfctEdDMYdaPS-kv5OYZj-Gc1Rtud1Kswr6hrnlT8ruZVyuZfWRgFNeyLCQ0zrrStjV4yGbKvvdk0vUGSofJlnpKtmW8X56PeXGr3m0ufEgAKCBPflOOuRf_JCeruv6C0U6cHQ:1tmCZ1:iiKToAnU0zDuDuAe5kFvlWRs-2zZc4uKBL7ou37ClG8', '2025-03-09 14:02:35.207833');
+('fla9ikmy0u0ib1yxkpkmu7ihcs9ci8bk', '.eJxVjDsOwjAQBe_iGlle_3Ao6XMGy95d4wBypDipEHeHSCmgfTPzXiKmba1x67zEicRFgDj9bjnhg9sO6J7abZY4t3WZstwVedAux5n4eT3cv4Oaev3W1nsumq3xwbJzHsEZYnUuVg1IBU0xqrigVEAOBSCwQfCalM16yMDi_QHWojek:1tmEMv:3ZZSu2O0UJNA9UQAxgAzKMvJZSnwwUL7mr5mkYRUg2o', '2025-03-09 15:58:13.543056'),
+('jmgw1e1qaly7dvxok7xelc0fg3hvi8zk', '.eJxVTstuwyAQ_BXEObLAPIp9zKWnRK2q3iohDEvsNMEphkMV-d8LVg7pZbQ7Mzuzd6xNTqPOC0Q9OdxjinfP3GDsN4QquLMJp7mxc0hxGppqaR7q0hxmB5f9w_svYDTLWK65lOBb4EwqDkJISwVzQF48J5113jLPiBeKEGVBeUoVMEtl6wgf2m6gUEKtiQn3d7zk26JFna61VQdzhdJQ6eJKU7rU9ePzDe1nEx36yoQztyHZkFfkbJvbJxU27NDrO2JMoOMUzqYk3uJkS2Iry3cN2eGfbEJp-cU9Xdf1D1gsZPs:1tpB9A:d7keRnd5JiGJO_JVU6kcx89I2fi4alBlukqNI9p9Rd8', '2025-03-17 19:08:12.573445');
 
 -- --------------------------------------------------------
 
@@ -563,7 +648,8 @@ CREATE TABLE `Longboards` (
 
 INSERT INTO `Longboards` (`id`, `title`, `description`, `img`, `img_lots`, `price_discount`, `price`, `brand_id_id`, `color_id_id`, `size_id_id`) VALUES
 (1, 'Лонгборд Termit 38\"', 'Лонгборд Termit 38.4\" с декой из канадского клена — отличный выбор, чтобы прокатиться по городу или опробовать скоростной спуск с горки. Модель рассчитана на средний уровень подготовки.', 'longboards/114099830299.jpg', 'longboards/114099880299.jpg', NULL, '8999', 2, 2, 6),
-(2, 'Лонгборд Termit Pintail', 'Лонгборд Termit Pintail — отличный выбор для комфортного катания по асфальту или по бетону. Доска подойдет райдерам со средним уровнем подготовки.', 'longboards/76716310299_1.jpg', 'longboards/76522930299.jpg', NULL, '8999', 2, 2, 5);
+(2, 'Лонгборд Termit Pintail', 'Лонгборд Termit Pintail — отличный выбор для комфортного катания по асфальту или по бетону. Доска подойдет райдерам со средним уровнем подготовки.', 'longboards/76716310299_1.jpg', 'longboards/76522930299.jpg', NULL, '8999', 2, 2, 5),
+(3, 'Лонгборд Street Surfing Curve Freeride Drop Through Holy Cube 39\"', 'Симметричная доска с 2 тейлами была разработана для катания по холмам и улицам. Колесная база этого лонгборда обеспечивает высокую устойчивость и в то же время позволяет выполнять крутые повороты, карвинг.', 'longboards/141299130299.jpg', 'longboards/141299130299_lSqBiac.jpg', NULL, '8999', 25, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -590,7 +676,9 @@ CREATE TABLE `Shoes` (
 
 INSERT INTO `Shoes` (`id`, `title`, `description`, `img`, `img_lots`, `price_discount`, `price`, `brand_id_id`, `color_id_id`, `size_id_id`) VALUES
 (1, 'Кроссовки женские Champion Canna', 'Кроссовки от Champion, выполненные в стилистике ретромоделей, прекрасно подойдут для долгих прогулок по городу.', 'shoes/144938630299.jpg', 'shoes/144762140299.jpg', NULL, '5999', 13, 1, 3),
-(2, 'Кроссовки женские New Balance 327', 'Кроссовки New Balance 327 — оригинальная модель из премиальных материалов, которая идеально дополнит любой спортивный образ.', 'shoes/139453010299.jpg', 'shoes/138338550299.jpg', '30', '14999', 14, 4, 3);
+(2, 'Кроссовки женские New Balance 327', 'Кроссовки New Balance 327 — оригинальная модель из премиальных материалов, которая идеально дополнит любой спортивный образ.', 'shoes/139453010299.jpg', 'shoes/138338550299.jpg', '30', '14999', 14, 4, 3),
+(3, 'Кроссовки женские PUMA St Runner V3 L', 'Кроссовки ST Runner v3 со стильными деталями верха и новой функциональной отделкой задника — неувядающая классика в новой интерпретации.', 'shoes/81232740299.jpg', 'shoes/61188220299.jpg', NULL, '7999', 27, 1, 2),
+(4, 'Кроссовки женские Demix Serena 4', 'Demix объединяет самые модные тенденции и самые современные материалы в этой стильной и удобной паре кроссовок Serena 4.', 'shoes/117287840299.jpg', 'shoes/112521580299.jpg', NULL, '4499', 28, 1, 4);
 
 -- --------------------------------------------------------
 
@@ -640,7 +728,8 @@ CREATE TABLE `Skateboards` (
 
 INSERT INTO `Skateboards` (`id`, `title`, `description`, `img`, `img_lots`, `price_discount`, `price`, `brand_id_id`, `color_id_id`, `size_id_id`) VALUES
 (3, 'Скейтборд детский Termit 100 22\"', 'Скейтборд 100 - 22\" от Termit — отличный выбор, чтобы освоить базовые навыки катания. Яркий дизайн никого не оставит равнодушным. Подходит для детей весом до 35 кг.', 'skateboards/53586760299_1.jpg', 'skateboards/57995230299_1.jpg', NULL, '1999', 2, 3, 2),
-(4, 'Скейтборд детский Termit 200 27.2\"', 'Детский скейтборд Termit 200 - 27.2\". Ребенок легко освоит эту доску и получит максимум удовольствия от катания.', 'skateboards/114100330299.jpg', 'skateboards/114100320299.jpg', NULL, '2399', 2, 3, 4);
+(4, 'Скейтборд детский Termit 200 27.2\"', 'Детский скейтборд Termit 200 - 27.2\". Ребенок легко освоит эту доску и получит максимум удовольствия от катания.', 'skateboards/114100330299.jpg', 'skateboards/114100320299.jpg', NULL, '2399', 2, 3, 4),
+(5, 'Скейтборд Element Escape From 7.75\"', 'Скейтборд Element Escape From 7.75\" станет отличным выбором для прогрессирующих райдеров. Надежная кленовая дека обеспечивает мощный щелчок и прочность, жесткие колеса позволяют выполнять трюки. Универсальная модель подходит для паркового и уличного катан', 'skateboards/63458750299.jpg', 'skateboards/62725320299.jpg', NULL, '9599', 24, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -666,7 +755,11 @@ CREATE TABLE `Skis` (
 --
 
 INSERT INTO `Skis` (`id`, `title`, `description`, `img`, `img_lots`, `price_discount`, `price`, `brand_id_id`, `color_id_id`, `size_id_id`) VALUES
-(1, 'Горные лыжи с креплениями Fischer The Curv TI TPR + RS 10 PR 23/24', 'Горные лыжи с креплениями Fischer The Curv TI TPR + RS 10 PR 23/24. Fischer The Curv TI TPR — горные лыжи для экспертов, которым необходим снаряд на каждый день. The Curv TI TPR снабжены всеми передовыми технологиями кубковых лыж Fischer, но имеют чуть бо', 'skis/138205660299.jpg', 'skis/138205660299_PaG354I.jpg', '35', '110490', 5, 5, 4);
+(1, 'Горные лыжи с креплениями Fischer The Curv TI TPR + RS 10 PR 23/24', 'Горные лыжи с креплениями Fischer The Curv TI TPR + RS 10 PR 23/24. Fischer The Curv TI TPR — горные лыжи для экспертов, которым необходим снаряд на каждый день. The Curv TI TPR снабжены всеми передовыми технологиями кубковых лыж Fischer, но имеют чуть бо', 'skis/138205660299.jpg', 'skis/138205660299_PaG354I.jpg', '35', '110490', 5, 5, 4),
+(3, 'Беговые лыжи Nordway Classic + крепления NNN', 'Надежные классические беговые лыжи с системой насечек для сцепления при отталкивании. Модель подойдет начинающим лыжникам. Установленные крепления Step NNN входят в стоимость комплекта.', 'skis/69588450299.jpg', 'skis/69484020299.jpg', '13', '3999', 21, 3, 3),
+(4, 'Комплект лыжный детский Nordway Bliss NNN', 'Комплект Nordway для девочек — отличный выбор для начала занятий лыжным спортом или для уроков физкультуры в школе. В комплект входят лыжи, палки и крепления системы NNN. Легкие и прочные лыжи с деревянным сердечником и универсальной скользящей поверхност', 'skis/69588500299_1.jpg', 'skis/69484260299_1.jpg', '24', '3999', 21, 3, 1),
+(5, 'Беговые лыжи Madshus Nordseter Carbon Skate + крепления NNN', 'Комплект гоночных коньковых беговых лыж с улучшенной карбоновой конструкцией, которая обеспечивает необходимую легкость и жесткость. Отличный вариант для любительских лыжных марафонов. Установлены спортивные крепления системы NNN. На производстве все лыжи', 'skis/140051220299.jpg', 'skis/140051200299.jpg', '10', '16999', 22, 5, 6),
+(6, 'Беговые лыжи Rossignol Evo XT 55 Positrack', 'Туристические лыжи Evo XT 55 Positrack от Rossignol — оптимальный выбор для походов и загородных прогулок.', 'skis/141123760299.jpg', 'skis/140612220299.jpg', NULL, '34999', 23, 5, 5);
 
 -- --------------------------------------------------------
 
@@ -693,7 +786,9 @@ CREATE TABLE `Snowboards` (
 
 INSERT INTO `Snowboards` (`id`, `title`, `description`, `img`, `img_lots`, `price_discount`, `price`, `brand_id_id`, `color_id_id`, `size_id_id`) VALUES
 (1, 'Сноуборд Termit Chance', 'Надежный, прощающий ошибки обучения Termit Chance — идеальный сноуборд для начинающих райдеров.', 'snowboards/138773670299.jpg', 'snowboards/138569170299.jpg', '20', '16999', 2, 5, 4),
-(2, 'Сноуборд женский Head Clover SMU', 'Мягкий сноуборд с универсальной геометрией для комфортного катания. Модель отлично подходит для обучения и позволяет легко осваивать первые трюки.', 'snowboards/105876080299.jpg', 'snowboards/105876080299_90BMlbS.jpg', '13', '34999', 8, 2, 3);
+(2, 'Сноуборд женский Head Clover SMU', 'Мягкий сноуборд с универсальной геометрией для комфортного катания. Модель отлично подходит для обучения и позволяет легко осваивать первые трюки.', 'snowboards/105876080299.jpg', 'snowboards/105876080299_90BMlbS.jpg', '13', '34999', 8, 2, 3),
+(3, 'Сноуборд YES. Basic', 'Универсальный сноуборд средней жесткости легкий в управлении: попробуйте себя в разных стилях катания. Форма True Twin полностью симметричная, что позволяет кататься в любой стойке.', 'snowboards/139364320299.jpg', 'snowboards/139364320299_jydsdgR.jpg', '30', '54499', 19, 2, 2),
+(4, 'Сноуборд EASYRIDER AURORA LAB', 'Полноценная доска с прогрессивным управлением для развлечения, быстрое обучение, позволяет легко начинать повороты и контролировать их, форма Twin предлагает езду вольным стилем с игривым ощущением катания на коньках, твердая стабильность и простота управ', 'snowboards/142943160299.jpg', 'snowboards/142943160299_78Ijzst.jpg', NULL, '27500', 20, 2, 4);
 
 -- --------------------------------------------------------
 
@@ -719,7 +814,9 @@ CREATE TABLE `Sups` (
 --
 
 INSERT INTO `Sups` (`id`, `title`, `description`, `img`, `img_lots`, `price_discount`, `price`, `brand_id_id`, `color_id_id`, `size_id_id`) VALUES
-(2, 'SUP доска надувная Gladiator ELITE 11.4 двухслойный', 'Хотите провести незабываемое лето? Универсальная sup- доска Gladiator Elite 11\'4 станет вашим надежным спутником в самых ярких и захватывающих приключениях. Эта модель создана для больших водных путешествий. Она легко скользит по воде и способна быстро пр', 'sups/92104150299.jpg', 'sups/92104220299.jpg', '23', '74900', 11, 1, 2);
+(2, 'SUP доска надувная Gladiator ELITE 11.4 двухслойный', 'Хотите провести незабываемое лето? Универсальная sup- доска Gladiator Elite 11\'4 станет вашим надежным спутником в самых ярких и захватывающих приключениях. Эта модель создана для больших водных путешествий. Она легко скользит по воде и способна быстро пр', 'sups/92104150299.jpg', 'sups/92104220299.jpg', '23', '74900', 11, 1, 2),
+(4, 'SUP Easy Rider Safari 11\'', 'Стильный сапборд Easy Rider из дизайнерской серии — устойчивая и грузоподъемная туринговая доска. Подходит всем: и опытным, и новичкам. Комфортно кататься как одному, так и вдвоем. Выполнена по технологии MSL: 2 толстых слоя ПВХ не склеены между собой кле', 'sups/78737380299.jpg', 'sups/78618770299.jpg', NULL, '43000', 20, 2, 2),
+(5, 'SUP Board надувной GQ 335 Ninja', 'Сапборды компании GQ выполнены по технологии Double Layer Fusion — на текстильную основу клеится слой ПВХ, затем заготовка доски накачивается, и поверх этого слоя клеится второй слой. Благодаря такому методу производства модели имеют невероятную прочность', 'sups/114858850299.jpg', 'sups/114858860299.jpg', NULL, '26800', 26, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -965,7 +1062,7 @@ ALTER TABLE `auth_permission`
 -- AUTO_INCREMENT для таблицы `auth_user`
 --
 ALTER TABLE `auth_user`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `auth_user_groups`
@@ -977,7 +1074,7 @@ ALTER TABLE `auth_user_groups`
 -- AUTO_INCREMENT для таблицы `auth_user_user_permissions`
 --
 ALTER TABLE `auth_user_user_permissions`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT для таблицы `Banners`
@@ -989,13 +1086,13 @@ ALTER TABLE `Banners`
 -- AUTO_INCREMENT для таблицы `Brand`
 --
 ALTER TABLE `Brand`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT для таблицы `Clothes`
 --
 ALTER TABLE `Clothes`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `Color`
@@ -1025,13 +1122,13 @@ ALTER TABLE `django_migrations`
 -- AUTO_INCREMENT для таблицы `Longboards`
 --
 ALTER TABLE `Longboards`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `Shoes`
 --
 ALTER TABLE `Shoes`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `Size`
@@ -1043,25 +1140,25 @@ ALTER TABLE `Size`
 -- AUTO_INCREMENT для таблицы `Skateboards`
 --
 ALTER TABLE `Skateboards`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `Skis`
 --
 ALTER TABLE `Skis`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `Snowboards`
 --
 ALTER TABLE `Snowboards`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `Sups`
 --
 ALTER TABLE `Sups`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `Surfings`

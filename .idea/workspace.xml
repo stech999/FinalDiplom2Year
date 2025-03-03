@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="мелкие изменения">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/catalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/test_site/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="мелкие изменения" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740332028220</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1741029070819</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741029070819</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
