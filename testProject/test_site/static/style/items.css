@@ -4,6 +4,23 @@
     flex-direction: column;
 }
 
+.container_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.sort_items{
+    padding-bottom:25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container_items{
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
 .center_items {
     display: flex;
     justify-content: center;

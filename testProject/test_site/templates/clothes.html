@@ -6,49 +6,66 @@
 {% endblock %}
 {% block clothes %}
 
-{% for item in items %}
+<div class="container_box">
+    <div class="sort_items">
+        <form method="get">
+            <label for="sort_by">Сортировать по:</label>
+            <select name="sort_by" id="sort_by" onchange="this.form.submit()">
+                <option value="">По умолчанию</option>
+                <option value="title" {% if request.GET.sort_by == "title" %}selected{% endif %}>Названию</option>
+                <option value="price" {% if request.GET.sort_by == "price" %}selected{% endif %}>Цене</option>
+                <option value="brand_id" {% if request.GET.sort_by == "brand_id" %}selected{% endif %}>Бренд</option>
+            </select>
+        </form>
+</div>
 
-<a href="{% url 'clothe' item.id %}">
-    <div class="item_box">
-        <div class="item_box_img">
-            {% if item.img %}
-            <img src="{{ item.img.url }}" alt="{{ item.title }}" class="box_img">
-            {% else %}
-            <p>Картинки еще не загружены</p>
-            {% endif %}
+<div class="container_items">
 
-            {% if item.price_discount %}
-            <div class="item_box_discount">-{{ item.price_discount }}%</div>
-            {% endif %}
-        </div>
+    {% for item in items %}
 
-        <div class="item_box_info">
-            <div class="item_box_info_title">{{ item.title }}</div>
-            <div class="item_box_title">
-                {% if item.price_discount %}
-                <p class="item_box_info_old_price">
-                    {{ item.formatted_price }} ₽
-                </p>
-                <p class="item_box_info_price">
-                    <b>{{ item.formatted_discounted_price }} ₽</b>
-                </p>
+    <a href="{% url 'clothe' item.id %}">
+        <div class="item_box">
+            <div class="item_box_img">
+                {% if item.img %}
+                <img src="{{ item.img.url }}" alt="{{ item.title }}" class="box_img">
                 {% else %}
-                <p class="item_box_info_price_noSale">
-                    <b>{{ item.formatted_price }} ₽</b>
-                </p>
+                <p>Картинки еще не загружены</p>
+                {% endif %}
+
+                {% if item.price_discount %}
+                <div class="item_box_discount">-{{ item.price_discount }}%</div>
                 {% endif %}
             </div>
-            <div class="add_cart_item">
-                <form method="post" action="{% url 'add_to_cart' 'clothes' item.pk %}">
-                    {% csrf_token %}
-                    <button type="submit" class="add_item">Оформить заказ</button>
-                </form>
+
+            <div class="item_box_info">
+                <div class="item_box_info_title">{{ item.title }}</div>
+                <div class="item_box_title">
+                    {% if item.price_discount %}
+                    <p class="item_box_info_old_price">
+                        {{ item.formatted_price }} ₽
+                    </p>
+                    <p class="item_box_info_price">
+                        <b>{{ item.formatted_discounted_price }} ₽</b>
+                    </p>
+                    {% else %}
+                    <p class="item_box_info_price_noSale">
+                        <b>{{ item.formatted_price }} ₽</b>
+                    </p>
+                    {% endif %}
+                </div>
+                <div class="add_cart_item">
+                    <form method="post" action="{% url 'add_to_cart' 'clothes' item.pk %}">
+                        {% csrf_token %}
+                        <button type="submit" class="add_item">Оформить заказ</button>
+                    </form>
+                </div>
             </div>
+
         </div>
+    </a>
 
-    </div>
-</a>
-
-{% endfor %}
+    {% endfor %}
+</div>
+</div>
 
 {% endblock %}

@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="мелкие изменения" />
+    <list default="true" id="4426a438-5bc6-45b9-b6d6-349b0eb4f9d9" name="Changes" comment="мелкие изменения">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/static/style/items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/accessories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/clothes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/longboards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/shoes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skateboards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/skis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/snowboards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/sups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/templates/surfings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProject/test_site/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/test_site/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,18 +39,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "stech999"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;stech999&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/stech999/FinalDiplom2Year.git",
-    "accountId": "46932bb6-41a1-478d-a582-7af0ae90262c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/stech999/FinalDiplom2Year.git&quot;,
+    &quot;accountId&quot;: &quot;46932bb6-41a1-478d-a582-7af0ae90262c&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/testProject/test_site/urls.py" root0="SKIP_INSPECTION" />
   </component>
@@ -143,7 +161,39 @@
       <option name="project" value="LOCAL" />
       <updated>1740331303215</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1740331507003</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740331507003</updated>
+    </task>
+    <task id="LOCAL-00009" summary="мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1740331616906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740331616906</updated>
+    </task>
+    <task id="LOCAL-00010" summary="мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1740331710803</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740331710803</updated>
+    </task>
+    <task id="LOCAL-00011" summary="мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1740332028220</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740332028220</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

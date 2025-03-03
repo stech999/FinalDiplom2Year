@@ -75,6 +75,14 @@ def catalog(request):
 
 def snowboards(request):
     items = Snowboards.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
+
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "snowboards.html", context)
@@ -89,6 +97,13 @@ def snowboard(request, pk):
 
 def skis(request):
     items = Skis.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "skis.html", context)
@@ -103,6 +118,13 @@ def ski(request, pk):
 
 def skateboards(request):
     items = Skateboards.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "skateboards.html", context)
@@ -117,6 +139,13 @@ def skateboard(request, pk):
 
 def longboards(request):
     items = Longboards.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "longboards.html", context)
@@ -131,6 +160,13 @@ def longboard(request, pk):
 
 def surfings(request):
     items = Surfings.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "surfings.html", context)
@@ -145,6 +181,13 @@ def surfing(request, pk):
 
 def sups(request):
     items = Sups.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "sups.html", context)
@@ -159,6 +202,13 @@ def sup(request, pk):
 
 def clothes(request):
     items = Clothes.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "clothes.html", context)
@@ -173,6 +223,13 @@ def clothe(request, pk):
 
 def shoes(request):
     items = Shoes.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "shoes.html", context)
@@ -187,6 +244,13 @@ def shoe(request, pk):
 
 def accessories(request):
     items = Accessories.objects.all()
+    sort_by = request.GET.get('sort_by')
+    if sort_by == 'title':
+        items = items.order_by('title')
+    elif sort_by == 'price':
+        items = items.order_by('price')
+    elif sort_by == 'brand_id':
+        items = items.order_by('brand_id')
     # Передаем данные в шаблон
     context = {'items': items}
     return render(request, "accessories.html", context)

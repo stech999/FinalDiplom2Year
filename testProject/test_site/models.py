@@ -80,7 +80,6 @@ class Snowboards(models.Model):
     description = models.CharField(max_length=255, verbose_name="Описание товара")
     img = models.ImageField(upload_to='snowboards/', verbose_name="Изображение товара")
     img_lots = models.ImageField(upload_to='snowboards/', verbose_name="Много картинок")
-    # price_discount = models.CharField(max_length=255, verbose_name="Цена со скидкой")
     price_discount = models.DecimalField(max_digits=6, decimal_places=0, null=True, blank=True,
                                          verbose_name="Скидка (%)")
     price = models.DecimalField(max_digits=10, decimal_places=0, verbose_name="Цена")

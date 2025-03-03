@@ -208,6 +208,7 @@
     height: 35px;
     font-size: 24px;
     font-weight: 500;
+    padding-left: 10px;
 }
 
 .cart_left_pay_online_info_name_input_secret {
@@ -215,6 +216,7 @@
     height: 35px;
     font-size: 24px;
     font-weight: 500;
+    padding-left: 10px;
 }
 
 .pay_online_img_cart {
@@ -306,5 +308,19 @@
     right: 10px;
     font-size: 20px;
     cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.btn_remove{
+    display: flex;
+    width: 70px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: #cecece;
+}
+.btn_remove:hover{
+    background: #EB5757;
     transition: transform 0.5s;
 }

@@ -53,7 +53,7 @@
                 <div>
                     <form method="post" action="{% url 'remove_from_cart' item.item_id %}">
                         {% csrf_token %}
-                        <button type="submit">Удалить</button>
+                        <button class="btn_remove" type="submit">Удалить</button>
                     </form>
                 </div>
 
@@ -71,7 +71,7 @@
                 </div>
                 <div class="cart_left_delivery_box_data">
                     <p>Ориентировочная дата доставки:</p>
-                    <p>04.03.2025 (вс)</p>
+                    <p>{% now "d.m.Y" %}</p>
                     <p>Заказ хранится 7 дней</p>
                 </div>
             </div>
@@ -82,27 +82,26 @@
                 <div class="cart_left_pay_online_title">Информация о карте</div>
                 <div class="cart_left_pay_online_box_pay">
                     <div class="cart_left_pay_online_img_cart">
-
                         <img src="{% static 'img/info_cart.jpg'%}" alt="{{ item.title }}" class="pay_online_img_cart">
                     </div>
                     <div class="cart_left_pay_online_info">
                         <form action="" method="post">
                             <div class="cart_left_pay_online_info_name">
                                 <label for="">Имя</label>
-                                <input type="text" class="cart_left_pay_online_info_name_input">
+                                <input type="text" class="cart_left_pay_online_info_name_input" placeholder="Ivanov Ivan">
                             </div>
                             <div class="cart_left_pay_online_info_name">
                                 <label for="">Номер карты</label>
-                                <input type="text" class="cart_left_pay_online_info_name_input">
+                                <input type="text" class="cart_left_pay_online_info_name_input" placeholder="0000 0000 0000 0000">
                             </div>
                             <div class="cart_left_pay_online_info_srok">
                                 <div class="cart_left_pay_online_info_name">
                                     <label for="">Месяц и год</label>
-                                    <input type="text" class="cart_left_pay_online_info_name_input_secret">
+                                    <input type="text" class="cart_left_pay_online_info_name_input_secret" placeholder="01.01.2027">
                                 </div>
                                 <div class="cart_left_pay_online_info_name">
                                     <label for="">Секретный код</label>
-                                    <input type="text" class="cart_left_pay_online_info_name_input_secret">
+                                    <input type="text" class="cart_left_pay_online_info_name_input_secret" placeholder="000">
                                 </div>
                             </div>
                         </form>

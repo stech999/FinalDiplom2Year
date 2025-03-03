@@ -288,17 +288,6 @@
     margin-right: 5px;
 }
 
-.catalog_sort {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 30px;
-    padding-bottom: 25px;
-
-}
-
-
 
 /*-- --*/
 .product_item {
